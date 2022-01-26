@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Web App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <!--  dashboard -->
+        <div class="dashboard">
+
+            <div class="icon">
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>  
+
+            <!-- header -->
+            <header>
+                <h4>Now Playing</h4>
+                <h2>Yeu 5</h2>
+            </header>
+
+            <!-- cd -->
+            <div class="cd">
+                <div class="cd-thumb"
+                    style="background-image: url('./image/yeu5.jpg')">
+                </div>
+            </div>
+
+            <!-- audio control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+
+            <!-- thanh range phat nhac -->
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="1000">
+            <div class="time">
+                <span class="currentTime">1</span>
+                <span class="durationTime">2</span>
+            </div>
+            <audio id="audio" src=""></audio>
+
+        </div>
+
+        <div class="playlist">
+            
+
+            <div class="song">
+                <div class="avatar" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                </div>
+                <div class="info">
+                    <h3>Music Name</h3>
+                    <p>Singer Name</p>
+                </div>  
+                <div class="options">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+
+            <div class="song">
+                <div class="avatar" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                </div>
+                <div class="info">
+                    <h3>Music Name</h3>
+                    <p>Singer Name</p>
+                </div>  
+                <div class="options">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>
